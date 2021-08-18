@@ -25,15 +25,16 @@ class Queue:
     def size(self):
         return len(self.buffer)
 
+
 # NYSE
 q = Queue()
-q.enqueue({"stock":"vmw", "timestamp":datetime.datetime.now(), "price":150.56})
+q.enqueue({"stock": "vmw", "timestamp": datetime.datetime.now(), "price": 150.56})
 time.sleep(1)
-q.enqueue({"stock":"vmw", "timestamp":datetime.datetime.now(), "price":151.23})
+q.enqueue({"stock": "vmw", "timestamp": datetime.datetime.now(), "price": 151.23})
 time.sleep(1)
-q.enqueue({"stock":"vmw", "timestamp":datetime.datetime.now(), "price":149.21})
+q.enqueue({"stock": "vmw", "timestamp": datetime.datetime.now(), "price": 149.21})
 time.sleep(1)
-q.enqueue({"stock":"vmw", "timestamp":datetime.datetime.now(), "price":150.23})
+q.enqueue({"stock": "vmw", "timestamp": datetime.datetime.now(), "price": 150.23})
 
 # Yahoo Finance/Google Finance
 q.dequeue()
